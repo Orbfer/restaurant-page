@@ -1,5 +1,8 @@
 import "./styles.css";
+import "animate.css";
 import loadHomePage from "./homePage.js";
+import loadMenuPage from "./menuPage.js";
+import loadAboutPage from "./aboutPage.js";
 const pageContent = document.querySelector("#content");
 function makeHeader() {
   const header = document.createElement("div");
@@ -41,12 +44,14 @@ function makeHeader() {
     menuBtn.style.borderStyle = "none none solid none";
     homeBtn.style.border = "0";
     aboutBtn.style.border = "0";
+    loadMenuPage();
   }
   function aboutBtnClicked() {
     aboutBtn.style.border = "3px solid var(--thirdColor)";
     aboutBtn.style.borderStyle = "none none solid none";
     menuBtn.style.border = "0";
     homeBtn.style.border = "0";
+    loadAboutPage();
   }
 }
 makeHeader();

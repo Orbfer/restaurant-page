@@ -1,5 +1,4 @@
 import removeExistingPage from "./removeExistingPage";
-import "animate.css";
 const pageContent = document.querySelector("#content");
 function loadHomePage() {
   removeExistingPage();
