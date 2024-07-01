@@ -18,13 +18,13 @@ function loadHomePage() {
   homePage.append(imgCont);
   const image = document.createElement("div");
   image.classList.add("image", "animate__animated");
-  image.style.backgroundImage = 'url("../imgs/image1.jpg")';
+  image.style.backgroundImage = 'url("../dist/imgs/image1.jpg")';
   imgCont.append(image);
   const images = [
-    'url("../imgs/image1.jpg")',
-    'url("../imgs/image2.jpg")',
-    'url("../imgs/image3.jpg")',
-    'url("../imgs/image4.jpg")',
+    'url("../dist/imgs/image1.jpg")',
+    'url("../dist/imgs/image2.jpg")',
+    'url("../dist/imgs/image3.jpg")',
+    'url("../dist/imgs/image4.jpg")',
   ];
   let currentIndex = 1;
   function changeImage() {

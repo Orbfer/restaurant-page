@@ -32,15 +32,19 @@ function loadMenuPage() {
   breakfast.classList.add("category");
   food.append(breakfast);
   breakfast.innerText = "Italian Breakfast";
-  createMenuItem(hotBev, "../imgs/Espresso-Italiano.png", "Espresso Italiano");
   createMenuItem(
     hotBev,
-    "../imgs/Espresso-Machiatto.png",
+    "../dist/imgs/Espresso-Italiano.png",
+    "Espresso Italiano"
+  );
+  createMenuItem(
+    hotBev,
+    "../dist/imgs/Espresso-Machiatto.png",
     "Espresso Machiatto"
   );
   createMenuItem(
     hotBev,
-    "../imgs/Espresso-Napoletano.png",
+    "../dist/imgs/Espresso-Napoletano.png",
     "Espresso Napoletano"
   );
   createMenuItem(
@@ -48,26 +52,38 @@ function loadMenuPage() {
     "../imgs/Cappuccino-Italiano.png",
     "Cappuccino Italiano"
   );
-  createMenuItem(hotBev, "../imgs/Americano.png", "Americano");
-  createMenuItem(hotBev, "../imgs/Hot-Chocolate.png", "Hot Chocolate");
-  createMenuItem(coldBev, "../imgs/Iced-Latte.png", "Iced Latte");
-  createMenuItem(coldBev, "../imgs/Iced-Americano.png", "Iced Americano");
-  createMenuItem(coldBev, "../imgs/Espresso-Freddo.png", "Espresso Freddo");
+  createMenuItem(hotBev, "../dist/imgs/Americano.png", "Americano");
+  createMenuItem(hotBev, "../dist/imgs/Hot-Chocolate.png", "Hot Chocolate");
+  createMenuItem(coldBev, "../dist/imgs/Iced-Latte.png", "Iced Latte");
+  createMenuItem(coldBev, "../dist/imgs/Iced-Americano.png", "Iced Americano");
   createMenuItem(
     coldBev,
-    "../imgs/Cappuccino-Shakerato.png",
+    "../dist/imgs/Espresso-Freddo.png",
+    "Espresso Freddo"
+  );
+  createMenuItem(
+    coldBev,
+    "../dist/imgs/Cappuccino-Shakerato.png",
     "Cappuccino Shakerato"
   );
-  createMenuItem(coldBev, "../imgs/Affogato.png", "Affogato");
-  createMenuItem(pastry, "../imgs/Croissant.png", "Croissant");
-  createMenuItem(pastry, "../imgs/Muffins.png", "Muffins");
-  createMenuItem(pastry, "../imgs/Crepe.png", "Crepe");
-  createMenuItem(pastry, "../imgs/Macarons.png", "Macarons");
-  createMenuItem(breakfast, "../imgs/Bruschetta.png", "Bruschetta");
-  createMenuItem(breakfast, "../imgs/Cheddar-Omelet.png", "Cheddar Omelet");
-  createMenuItem(breakfast, "../imgs/Veggie-Omelet.png", "Veggie Omelet");
-  createMenuItem(breakfast, "../imgs/Chicken-Panini.png", "Chicken Panini");
-  createMenuItem(breakfast, "../imgs/Frittata.png", "Frittata");
+  createMenuItem(coldBev, "../dist/imgs/Affogato.png", "Affogato");
+  createMenuItem(pastry, "../dist/imgs/Croissant.png", "Croissant");
+  createMenuItem(pastry, "../dist/imgs/Muffins.png", "Muffins");
+  createMenuItem(pastry, "../dist/imgs/Crepe.png", "Crepe");
+  createMenuItem(pastry, "../dist/imgs/Macarons.png", "Macarons");
+  createMenuItem(breakfast, "../dist/imgs/Bruschetta.png", "Bruschetta");
+  createMenuItem(
+    breakfast,
+    "../dist/imgs/Cheddar-Omelet.png",
+    "Cheddar Omelet"
+  );
+  createMenuItem(breakfast, "../dist/imgs/Veggie-Omelet.png", "Veggie Omelet");
+  createMenuItem(
+    breakfast,
+    "../dist/imgs/Chicken-Panini.png",
+    "Chicken Panini"
+  );
+  createMenuItem(breakfast, "../dist/imgs/Frittata.png", "Frittata");
 }
 function createMenuItem(category, img, name) {
   const itemCont = document.createElement("div");

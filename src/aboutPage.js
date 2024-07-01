@@ -27,7 +27,7 @@ function loadAboutPage() {
   addressBox.classList.add("address-box");
   addressPart.append(addressBox);
   const map = document.createElement("img");
-  map.setAttribute("src", "../imgs/map.png");
+  map.setAttribute("src", "../dist/imgs/map.png");
   map.setAttribute("alt", "Map Address");
   map.classList.add("map");
   addressBox.append(map);

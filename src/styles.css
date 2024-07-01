@@ -15,7 +15,7 @@ body {
   background-color: var(--mainColor);
   color: var(--textColor);
   font-family: var(--mainText);
-  background-image: url(../imgs/background.jpg);
+  background-image: url(../dist/imgs/background.jpg);
   background-size: cover;
 }
 .wrapper-main {
