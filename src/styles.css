@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --mainColor: #e4c59e;
+  --secondaryColor: #af8260;
+  --thirdColor: #803d3b;
+  --textColor: #322c2b;
+  --mainText: "Playfair Display";
+  --titleFont: "Dancing Script";
+}
+body {
+  margin: 0;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  font-family: var(--mainText);
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  font-size: 100%;
+}
+.header {
+  grid-row: 1/2;
+  background-color: #af8260b4;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.title {
+  font-size: 5em;
+  font-family: var(--titleFont);
+}
+.btns-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.nav-btn {
+  font-size: 1.5em;
+  font-family: var(--mainText);
+  color: var(--textColor);
+  background-color: transparent;
+  border: 0;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+.home {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.home-text {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.main-text {
+  background-color: #af8260b8;
+  margin: 1.5em;
+  padding: 1em;
+  font-size: 2.6em;
+}
+.img-cont {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 90%;
+}
+.image {
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
